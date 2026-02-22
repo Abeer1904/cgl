@@ -1,0 +1,326 @@
+<!-- games.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Games for Complex Systems | Civic Games Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;750;850;950&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages/games-catalogue.css">
+</head>
+
+<body class="page-games">
+<header class="site-header">
+  <div class="container">
+    <nav class="site-nav">
+      <a class="brand" href="index.html">Civic Games Lab</a>
+      <div class="nav-links">
+        <a class="is-active" href="games.html">Games</a>
+        <a href="scenarios.html">Scenarios</a>
+        <a href="research.html">Research</a>
+        <a href="sigma.html">SIGMA</a>
+        <a href="festival.html">Festival</a>
+        <a href="ip.html">Narrative Lab</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="games-hero">
+    <div class="games-wrap">
+      <p class="kicker">Games for Complex Systems</p>
+      <h1 class="h1">Our games</h1>
+      <p class="subhead">
+        A catalogue of playable systems we have designed and deployed across communities, governments, foundations, and institutions.
+        Each game is also a field-tested research framework.
+      </p>
+
+      <div class="hero-strip">
+        <div class="stat">
+          <div class="label">Games</div>
+          <div class="value">17</div>
+          <div class="meta">Boxed + simulations</div>
+        </div>
+        <div class="stat">
+          <div class="label">Since</div>
+          <div class="value">2018</div>
+          <div class="meta">Idea → field</div>
+        </div>
+        <div class="stat">
+          <div class="label">Domains</div>
+          <div class="value">Climate, governance, gender, digital</div>
+          <div class="meta">and more</div>
+        </div>
+      </div>
+
+      <!-- FILTERS -->
+      <div class="filters card">
+        <div class="filters-left">
+          <span class="filters-label">Filter by theme</span>
+          <div class="chips" role="tablist" aria-label="Filter games">
+            <button class="chip is-active" type="button" data-filter="all">All</button>
+            <button class="chip" type="button" data-filter="governance">Governance</button>
+            <button class="chip" type="button" data-filter="climate">Climate</button>
+            <button class="chip" type="button" data-filter="gender">Gender</button>
+            <button class="chip" type="button" data-filter="digital">Digital & Media</button>
+            <button class="chip" type="button" data-filter="economy">Economy</button>
+            <button class="chip" type="button" data-filter="water">Water</button>
+          </div>
+        </div>
+
+        <div class="filters-right">
+          <label class="search">
+            <span class="sr-only">Search games</span>
+            <input id="gameSearch" type="search" placeholder="Search by name…" autocomplete="off" />
+          </label>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GRID -->
+  <section class="games-grid-section">
+    <div class="games-wrap">
+      <div class="grid" id="gamesGrid">
+
+        <!-- NOTE: set image paths later. Keep consistent foldering: assets/img/games/<slug>/cover.jpg -->
+
+        <article class="game-card" data-tags="digital governance" data-title="The Poll">
+          <a class="card-link" href="games/the-poll.html" aria-label="Open The Poll (page coming)">
+            <div class="card-media">
+              <div class="media-ph">Cover image</div>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>The Poll</h3>
+                <span class="year">2018</span>
+              </div>
+              <p>Public opinion, persuasion, and political behaviour as a playable system.</p>
+              <div class="pill-row">
+                <span class="pill">Governance</span><span class="pill">Simulation</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="governance" data-title="Fix it!">
+          <a class="card-link" href="games/fix-it.html" aria-label="Open Fix it! (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Fix it!</h3><span class="year">2019</span></div>
+              <p>Rapid systems repair. Diagnose constraints, test interventions, face trade-offs.</p>
+              <div class="pill-row"><span class="pill">Governance</span><span class="pill">Workshop</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="governance economy" data-title="Reset / Better World">
+          <a class="card-link" href="games/reset-better-world.html" aria-label="Open Reset / Better World (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Reset / Better World</h3><span class="year">2020</span></div>
+              <p>A futures simulation for rebuilding institutions under uncertainty and shocks.</p>
+              <div class="pill-row"><span class="pill">Futures</span><span class="pill">Simulation</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="economy" data-title="Engines of Growth">
+          <a class="card-link" href="games/engines-of-growth.html" aria-label="Open Engines of Growth (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Engines of Growth</h3><span class="year">2021</span></div>
+              <p>Strategy, innovation, entrepreneurship. Build, break, adapt, scale.</p>
+              <div class="pill-row"><span class="pill">Economy</span><span class="pill">Strategy</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="gender governance" data-title="Chuppi Todo">
+          <a class="card-link" href="games/chuppi-todo.html" aria-label="Open Chuppi Todo (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Chuppi Todo</h3><span class="year">2021</span></div>
+              <p>Domestic violence literacy, referral pathways, agency, and institutional support.</p>
+              <div class="pill-row"><span class="pill">Gender</span><span class="pill">Board + Cards</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="governance health" data-title="Poshan ki Potli">
+          <a class="card-link" href="games/poshan-ki-potli.html">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Poshan ki Potli</h3><span class="year">2022</span></div>
+              <p>Nutrition literacy through food groups, local recipes, and dietary diversity.</p>
+              <div class="pill-row"><span class="pill">Health</span><span class="pill">Cards</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="health" data-title="Purak Ahaar">
+          <a class="card-link" href="games/purak-ahaar.html" aria-label="Open Purak Ahaar (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Purak Ahaar</h3><span class="year">2022</span></div>
+              <p>Complementary nutrition and early-life food practices as a playable framework.</p>
+              <div class="pill-row"><span class="pill">Health</span><span class="pill">Cards</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="digital governance" data-title="Farzi">
+          <a class="card-link" href="games/farzi.html">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Farzi</h3><span class="year">2020</span></div>
+              <p>Misinformation, verification, and social incentives as a community game.</p>
+              <div class="pill-row"><span class="pill">Digital & Media</span><span class="pill">Cards</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="governance" data-title="Kartik">
+          <a class="card-link" href="games/kartik.html" aria-label="Open Kartik (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Kartik</h3><span class="year">2020</span></div>
+              <p>Character-driven civic exploration and democratic decision contexts.</p>
+              <div class="pill-row"><span class="pill">Governance</span><span class="pill">Narrative</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="digital governance" data-title="Kritika">
+          <a class="card-link" href="games/kritika.html" aria-label="Open Kritika (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Kritika</h3><span class="year">2020</span></div>
+              <p>Digital rights, youth agency, and civic action as a playable system.</p>
+              <div class="pill-row"><span class="pill">Digital</span><span class="pill">Civics</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="water governance" data-title="It’s in the Water">
+          <a class="card-link" href="games/its-in-the-water.html" aria-label="Open It’s in the Water (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>It’s in the Water</h3><span class="year">2023</span></div>
+              <p>A civic water story + system that surfaces behaviour, incentives, and risk.</p>
+              <div class="pill-row"><span class="pill">Water</span><span class="pill">Story + Play</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="climate" data-title="Climate Crusaders">
+          <a class="card-link" href="games/climate-crusaders.html" aria-label="Open Climate Crusaders (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Climate Crusaders</h3><span class="year">2023</span></div>
+              <p>Spot climate signals on a board via riddles and rapid recognition.</p>
+              <div class="pill-row"><span class="pill">Climate</span><span class="pill">Board</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="climate" data-title="Climate Quest">
+          <a class="card-link" href="games/climate-quest.html" aria-label="Open Climate Quest (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Climate Quest</h3><span class="year">2023</span></div>
+              <p>Causes, effects, actions. Match pathways and build climate vocabulary.</p>
+              <div class="pill-row"><span class="pill">Climate</span><span class="pill">Cards</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="governance" data-title="Gram Vikas">
+          <a class="card-link" href="games/gram-vikas.html" aria-label="Open Gram Vikas (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Gram Vikas</h3><span class="year">2024</span></div>
+              <p>Panchayat governance simulation for planning, budgets, roles, and trade-offs.</p>
+              <div class="pill-row"><span class="pill">Governance</span><span class="pill">Simulation</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="digital geopolitics governance" data-title="Splinternet (Balkanized)">
+          <a class="card-link" href="games/splinternet.html" aria-label="Open Splinternet (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Splinternet</h3><span class="year">2024</span></div>
+              <p>Geopolitics of internet fragmentation as a rules-based playable system.</p>
+              <div class="pill-row"><span class="pill">Digital</span><span class="pill">Geopolitics</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="digital governance" data-title="Digital Naagrik">
+          <a class="card-link" href="games/digital-naagrik.html" aria-label="Open Digital Naagrik (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Digital Naagrik</h3><span class="year">2024</span></div>
+              <p>Digital citizenship, rights, responsibilities, and platform behaviour.</p>
+              <div class="pill-row"><span class="pill">Digital</span><span class="pill">Civics</span></div>
+            </div>
+          </a>
+        </article>
+
+        <article class="game-card" data-tags="water governance" data-title="Water Management">
+          <a class="card-link" href="games/water-management.html" aria-label="Open Water Management (page coming)">
+            <div class="card-media"><div class="media-ph">Cover image</div></div>
+            <div class="card-body">
+              <div class="card-top"><h3>Water Management</h3><span class="year">2024</span></div>
+              <p>Commons governance, allocation, and scarcity as a playable decision space.</p>
+              <div class="pill-row"><span class="pill">Water</span><span class="pill">Simulation</span></div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Workshops -->
+      <div class="workshops">
+        <div class="workshops-head">
+          <h2 class="h2">Interactive game-based workshops</h2>
+          <p class="subhead-sm">
+            Shorter formats that still behave like systems. These are built for rapid problem framing, rehearsal, and action planning.
+          </p>
+        </div>
+
+        <div class="workshop-grid">
+          <div class="workshop-card">
+            <h3>Policy Escape Rooms</h3>
+            <p>High-pressure roleplay around governance constraints, trade-offs, and institutional incentives.</p>
+            <div class="pill-row"><span class="pill">Governance</span><span class="pill">Experience</span></div>
+          </div>
+          <div class="workshop-card">
+            <h3>AI Workshop</h3>
+            <p>Hands-on scenario rehearsal for AI decisions, risks, incentives, and second-order effects.</p>
+            <div class="pill-row"><span class="pill">Technology</span><span class="pill">Scenario</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-row"><span>© Civic Games Lab</span><span>Strategic Possibilities</span></div>
+  </div>
+</footer>
+
+<script defer src="js/games-catalogue.js"></script>
+</body>
+</html>

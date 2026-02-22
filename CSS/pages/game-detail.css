@@ -1,0 +1,352 @@
+/* css/pages/game-detail.css */
+/* Works with your current farzi.html markup exactly */
+
+.page-game{
+  --ink:#2F4E52;
+  --muted:rgba(77,105,109,.78);
+  --text:rgba(18,52,58,.84);
+  --line:rgba(77,105,109,.14);
+  --line2:rgba(77,105,109,.10);
+  --card:rgba(255,255,255,.66);
+  --card2:rgba(255,255,255,.56);
+  --shadow:0 12px 26px rgba(17,24,39,.08);
+  --shadow2:0 16px 34px rgba(17,24,39,.10);
+
+  --r-lg:22px;
+  --r:18px;
+  --r-sm:14px;
+
+  --pad-lg:20px;
+  --pad:16px;
+  --pad-sm:12px;
+
+  padding-bottom: 56px;
+}
+
+.page-game main{ padding-top: 18px; }
+
+/* ---- Hero layout ---- */
+.page-game .game-hero{
+  padding: 22px 0 8px;
+}
+
+.page-game .game-wrap{
+  width:min(1120px, calc(100% - 40px));
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.page-game .kicker{
+  margin:0 0 10px;
+  font-weight:900;
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+
+.page-game .h1{
+  margin:0 0 10px;
+  font-weight:950;
+  letter-spacing:-.7px;
+  font-size:40px;
+  line-height:1.04;
+  color:var(--ink);
+}
+
+.page-game .subhead{
+  margin:0 0 12px;
+  max-width:92ch;
+  font-weight:450;
+  font-size:15.5px;
+  line-height:1.75;
+  color:var(--text);
+}
+
+/* Tags row */
+.page-game .tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin: 10px 0 10px;
+}
+
+.page-game .tag{
+  display:inline-flex;
+  align-items:center;
+  padding:7px 10px;
+  border-radius:999px;
+  border:1px solid rgba(77,105,109,.14);
+  background:rgba(255,255,255,.72);
+  font-weight:850;
+  font-size:12px;
+  color:rgba(47,78,82,.88);
+  box-shadow: 0 8px 18px rgba(17,24,39,.05);
+}
+
+.page-game .note{
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(77,105,109,.14);
+  background: rgba(255,255,255,.62);
+  color: rgba(18,52,58,.82);
+  font-size: 13.3px;
+  line-height: 1.65;
+}
+
+/* Hero media card */
+.page-game .hero-media.card{
+  border-radius: var(--r-lg);
+  border:1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow2);
+  overflow:hidden;
+  padding: 0;
+}
+
+.page-game .media-placeholder{
+  width:100%;
+  aspect-ratio: 16/10;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  background:
+    radial-gradient(900px 520px at 20% 10%, rgba(77,105,109,.22), transparent 55%),
+    rgba(77,105,109,.10);
+  color: rgba(18,52,58,.78);
+  font-weight: 900;
+  padding: 12px;
+}
+
+.page-game .media-placeholder small{
+  display:block;
+  margin-top:6px;
+  font-weight:650;
+  font-size:12px;
+  color: rgba(18,52,58,.68);
+}
+
+/* ---- Body layout ---- */
+.page-game .game-body{
+  display:grid;
+  grid-template-columns: 320px 1fr;
+  gap: 14px;
+  align-items:start;
+  padding: 18px 0 0;
+}
+
+/* TOC */
+.page-game .game-toc.card{
+  position: sticky;
+  top: 14px;
+  border-radius: var(--r);
+  border:1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  padding: var(--pad);
+}
+
+.page-game .h2{
+  margin:0 0 10px;
+  font-weight:950;
+  font-size:16px;
+  letter-spacing:-.25px;
+  color: #4D696D;
+}
+
+.page-game .game-toc a{
+  display:block;
+  padding: 9px 10px;
+  border-radius: 12px;
+  border:1px solid transparent;
+  color: rgba(18,52,58,.86);
+  font-weight: 750;
+  font-size: 13.2px;
+  text-decoration:none;
+}
+
+.page-game .game-toc a:hover{
+  background: rgba(255,255,255,.72);
+  border-color: rgba(77,105,109,.14);
+}
+
+/* Content cards */
+.page-game .game-content{
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+}
+
+.page-game .card.block{
+  border-radius: var(--r-lg);
+  border:1px solid var(--line);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  padding: var(--pad-lg);
+  position: relative;
+}
+
+.page-game .card.block:before{
+  content:"";
+  position:absolute;
+  left: 20px;
+  right: 20px;
+  top: 0;
+  height: 1px;
+  background: transparent;
+}
+
+.page-game .h3{
+  margin:0 0 10px;
+  font-weight:950;
+  font-size:14px;
+  letter-spacing:-.2px;
+  color: rgba(47,78,82,.92);
+}
+
+/* Paragraph / list formatting */
+.page-game .p{
+  margin: 0 0 12px;
+  font-weight: 450;
+  font-size: 14.8px;
+  line-height: 1.85;
+  color: var(--text);
+}
+
+.page-game .p:last-child{ margin-bottom:0; }
+
+.page-game .bullets{
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.page-game .bullets li{
+  margin: 0 0 8px;
+  font-size: 14.2px;
+  line-height: 1.75;
+  color: rgba(18,52,58,.84);
+}
+
+.page-game .bullets strong{
+  color: rgba(18,52,58,.92);
+}
+
+/* Two column minis inside Research */
+.page-game .two-col{
+  margin-top: 12px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.page-game .mini.card{
+  border-radius: var(--r);
+  border:1px solid var(--line2);
+  background: rgba(255,255,255,.62);
+  box-shadow: 0 10px 22px rgba(17,24,39,.06);
+  padding: var(--pad);
+}
+
+/* Resources grid */
+.page-game .resource-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.page-game a.resource.card{
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+  padding: 14px;
+  border-radius: var(--r);
+  border:1px solid rgba(77,105,109,.14);
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 10px 22px rgba(17,24,39,.06);
+  text-decoration:none;
+  color: rgba(18,52,58,.88);
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+
+.page-game a.resource.card:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.84);
+  border-color: rgba(77,105,109,.26);
+}
+
+.page-game a.resource.card span{
+  font-weight: 650;
+  font-size: 12.8px;
+  color: rgba(77,105,109,.78);
+}
+
+/* Gallery “carousel” strip (CSS-only, scroll-snap) */
+.page-game .gallery.card{
+  margin-top: 12px;
+  padding: var(--pad);
+  border-radius: var(--r-lg);
+  border:1px solid var(--line);
+  background: var(--card2);
+  box-shadow: var(--shadow);
+}
+
+.page-game .gallery-row{
+  display:flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 2px 2px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page-game .gallery-row::-webkit-scrollbar{ height: 10px; }
+.page-game .gallery-row::-webkit-scrollbar-thumb{
+  background: rgba(77,105,109,.22);
+  border-radius: 999px;
+}
+.page-game .gallery-row::-webkit-scrollbar-track{
+  background: rgba(255,255,255,.40);
+  border-radius: 999px;
+}
+
+.page-game .thumb{
+  flex: 0 0 280px;
+  height: 180px;
+  border-radius: 16px;
+  border:1px solid rgba(77,105,109,.16);
+  background:
+    radial-gradient(900px 520px at 20% 10%, rgba(77,105,109,.18), transparent 55%),
+    rgba(255,255,255,.60);
+  box-shadow: 0 10px 22px rgba(17,24,39,.06);
+  display:grid;
+  place-items:center;
+  font-weight: 900;
+  color: rgba(18,52,58,.72);
+  scroll-snap-align: start;
+}
+
+/* A clean “break” between hero and content */
+.page-game .section{
+  margin-top: 16px;
+}
+
+.page-game .section > .container{
+  border-top: 1px solid var(--line2);
+  padding-top: 18px;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .page-game .game-wrap{ grid-template-columns: 1fr; }
+  .page-game .h1{ font-size: 32px; }
+  .page-game .game-body{ grid-template-columns: 1fr; }
+  .page-game .game-toc.card{ position: static; }
+  .page-game .two-col{ grid-template-columns: 1fr; }
+  .page-game .resource-grid{ grid-template-columns: 1fr; }
+  .page-game .thumb{ flex-basis: 86%; height: 200px; }
+}

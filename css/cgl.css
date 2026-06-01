@@ -431,7 +431,7 @@ a { color: inherit; text-decoration: none; }
 }
 .method-stage {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: minmax(280px, 24vw) minmax(0, 1fr);
   border-top: 0.5px solid rgba(242,237,228,0.07);
 }
 .method-stage-l {
@@ -448,11 +448,12 @@ a { color: inherit; text-decoration: none; }
 }
 .method-verb {
   font-family: var(--font-d);
-  font-size: 80px;
+  font-size: clamp(48px, 4.4vw, 80px);
   color: var(--cream);
   text-transform: uppercase;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
   line-height: 0.86;
+  white-space: nowrap;
 }
 .method-stage-r {
   padding: 44px 40px 44px 48px;

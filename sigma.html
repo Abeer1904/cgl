@@ -1,288 +1,172 @@
-<!-- sigma.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SIGMA | Civic Games Lab</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;750;850;950&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/pages/sigma.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIGMA — Civic Games Lab</title>
+<meta name="description" content="SIGMA is the South Asian journal for storytelling, imagination, games, multimedia, and arts — a space for practitioners, thinkers, and makers who use these methods to help people imagine better futures.">
+  <link rel="stylesheet" href="css/cgl.css">
 </head>
+<body>
 
-<body class="page-sigma">
-  <!-- Standard header/nav (keep consistent site-wide) -->
-  <header class="site-header">
-    <div class="container">
-      <nav class="site-nav" aria-label="Primary">
-        <a class="brand" href="index.html">Civic Games Lab</a>
-        <div class="nav-links">
-          <a href="games.html">Games</a>
-          <a href="scenarios.html">Scenarios</a>
-          <a href="research.html">Research</a>
-          <a class="active" href="sigma.html" aria-current="page">SIGMA</a>
-          <a href="festival.html">Festival</a>
-          <a href="ip.html">Narrative Lab</a>
-          <a href="politics.html">Politics</a>
-        </div>
-      </nav>
+<nav class="nav">
+  <a class="nav-brand" href="index.html">Civic Games Lab</a>
+  <div class="nav-links">
+    <a href="governance.html">Governance</a>
+    <a href="climate.html">Climate</a>
+    <a href="digital.html">Digital</a>
+    <a href="health.html">Health</a>
+    <a href="games.html">All Games</a>
+    <a href="sigma.html" class="active">SIGMA</a>
+    <a href="festival.html">Festival</a>
+  </div>
+  <a class="nav-cta" href="work-with-us.html">Work With Us</a>
+</nav>
+
+<!-- HERO -->
+<section class="sec-d" style="padding-top:100px;padding-bottom:100px;border-top:none">
+  <div class="wrap-w" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end">
+    <div>
+      <p class="kicker">Journal</p>
+      <h1 style="font-family:var(--font-d);font-size:100px;color:var(--cream);text-transform:uppercase;letter-spacing:-.025em;line-height:.84;margin-bottom:28px">SIGMA</h1>
+      <div style="width:52px;height:4px;background:var(--accent);margin-bottom:28px"></div>
+      <p class="lede light">The South Asian journal for <strong style="color:var(--cream)">storytelling, imagination, games, multimedia, and arts.</strong></p>
+      <p class="body-p light">A space for speculative thinking and practice — for practitioners, thinkers, and makers who use these methods to help people imagine better futures.</p>
     </div>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section class="sigma-hero">
-      <div class="container sigma-hero__grid">
-        <div class="sigma-hero__copy">
-          <p class="kicker">Journal</p>
-          <h1 class="h1">SIGMA</h1>
-          <p class="subhead">
-            The South Asian journal for storytelling, imagination, games, multimedia, and arts.
-          </p>
-          <p class="lead">
-            A space for speculative storytelling and thinking, and for practitioners, thinkers, and makers who use these methodologies to help people imagine better futures.
-          </p>
-
-          <div class="cta-row">
-            <!-- Replace hrefs once your issue URLs are final -->
-            <a class="btn primary" href="#" aria-label="Read the latest issue">Read the latest issue</a>
-            <a class="btn ghost" href="https://sigma.smartngo.org/" target="_blank" rel="noreferrer">Visit SIGMA site</a>
-          </div>
-
-          <div class="meta-row">
-            <span class="meta-pill">Fiction + Non-fiction</span>
-            <span class="meta-pill">Practice + Debate</span>
-            <span class="meta-pill">Stories + Systems</span>
-          </div>
+    <div>
+      <div style="display:grid;grid-template-columns:1fr;gap:2px">
+        <div style="background:rgba(196,136,58,.08);border:.5px solid rgba(196,136,58,.2);padding:24px 28px">
+          <div style="font-size:9px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.16em;margin-bottom:10px">S</div>
+          <div style="font-size:15px;color:rgba(242,237,228,.6);line-height:1.5">Storytelling</div>
         </div>
-
-        <div class="sigma-hero__cover card">
-          <div class="cover-placeholder">
-            <div>
-              <strong>Cover placeholder</strong>
-              <div class="muted">Add: assets/img/sigma/cover-latest.jpg</div>
-            </div>
-          </div>
+        <div style="background:rgba(196,136,58,.08);border:.5px solid rgba(196,136,58,.2);padding:24px 28px">
+          <div style="font-size:9px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.16em;margin-bottom:10px">I</div>
+          <div style="font-size:15px;color:rgba(242,237,228,.6);line-height:1.5">Imagination</div>
+        </div>
+        <div style="background:rgba(196,136,58,.08);border:.5px solid rgba(196,136,58,.2);padding:24px 28px">
+          <div style="font-size:9px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.16em;margin-bottom:10px">G</div>
+          <div style="font-size:15px;color:rgba(242,237,228,.6);line-height:1.5">Games</div>
+        </div>
+        <div style="background:rgba(196,136,58,.08);border:.5px solid rgba(196,136,58,.2);padding:24px 28px">
+          <div style="font-size:9px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.16em;margin-bottom:10px">M · A</div>
+          <div style="font-size:15px;color:rgba(242,237,228,.6);line-height:1.5">Multimedia &amp; Arts</div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- QUESTIONS (Issue 1 anchor questions) -->
-    <section class="sigma-section sigma-questions">
-      <div class="container">
-        <h2 class="h2">Questions that anchor SIGMA</h2>
-        <p class="muted maxw">
-          These are the opening questions of SIGMA Issue 1, and they continue to frame what we publish.
-        </p>
-
-        <div class="q-grid" role="list">
-          <article class="q-card" role="listitem">
-            <p>Can storytelling help in building empathy, compassion, and social action in young people?</p>
-          </article>
-          <article class="q-card" role="listitem">
-            <p>Is there something like a South Asian imagination?</p>
-          </article>
-          <article class="q-card" role="listitem">
-            <p>How has the relationship between games and society influenced our understanding of the mundane?</p>
-          </article>
-          <article class="q-card" role="listitem">
-            <p>What concepts and ideas can foster learning and citizenship in multimedia and arts?</p>
-          </article>
-        </div>
+<!-- QUESTIONS THAT ANCHOR SIGMA -->
+<section class="sec-p">
+  <div class="wrap">
+    <p class="kicker k-dark">Questions that anchor SIGMA</p>
+    <h2 class="sh2 dark">Why we ask<br>what we ask.</h2>
+  </div>
+  <div class="wrap-w" style="margin-top:44px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line-ink)">
+      <div style="background:var(--paper);padding:36px 32px">
+        <div style="font-family:var(--font-d);font-size:22px;color:var(--ink);line-height:1.1;letter-spacing:-.01em">Can storytelling help in building empathy, compassion, and social action in young people?</div>
       </div>
-    </section>
-
-    <!-- WHAT SIGMA IS -->
-    <section class="sigma-section">
-      <div class="container">
-        <div class="split">
-          <div>
-            <h2 class="h2">A journal for practitioners, thinkers, and makers</h2>
-            <p class="p">
-              SIGMA provides a home to fiction and non-fiction, to practice, to questioning, to philosophical debate, and to discussion around South Asia’s futures.
-              We accord space to methodologies that help people enter ideas through form: games, comics, multimedia art, installations, and more.
-            </p>
-            <p class="p">
-              SIGMA is a space for the curious, the rigorous, and the speculative. For the interesting, the daring, and the weird.
-            </p>
-          </div>
-
-          <aside class="card sigma-side">
-            <h3 class="h3">What we publish</h3>
-            <ul class="bullets">
-              <li>Speculative storytelling and essays</li>
-              <li>Practice-led writing from the field</li>
-              <li>Games and systems writing</li>
-              <li>Comics, multimedia, and cultural practice</li>
-            </ul>
-          </aside>
-        </div>
+      <div style="background:var(--paper);padding:36px 32px">
+        <div style="font-family:var(--font-d);font-size:22px;color:var(--ink);line-height:1.1;letter-spacing:-.01em">Is there something like a South Asian imagination?</div>
       </div>
-    </section>
-
-    <!-- INSIDE SIGMA (Issue architecture) -->
-    <section class="sigma-section">
-      <div class="container">
-        <h2 class="h2">Inside SIGMA</h2>
-        <p class="muted maxw">Four ways of thinking and making that run through the journal.</p>
-
-        <div class="card-grid-4">
-          <article class="card section-card">
-            <h3 class="h3">Storytelling</h3>
-            <p class="p-sm">Narratives as civic context, voice, empathy, and social action.</p>
-          </article>
-          <article class="card section-card">
-            <h3 class="h3">Imagination</h3>
-            <p class="p-sm">Essays that treat imagination as a public capability, not a private luxury.</p>
-          </article>
-          <article class="card section-card">
-            <h3 class="h3">Games</h3>
-            <p class="p-sm">Analogue play, systems, learning, and citizenship through interaction.</p>
-          </article>
-          <article class="card section-card">
-            <h3 class="h3">Multimedia and Arts</h3>
-            <p class="p-sm">Comics, performance, installations, and hybrid forms as civic method.</p>
-          </article>
-        </div>
+      <div style="background:var(--paper);padding:36px 32px">
+        <div style="font-family:var(--font-d);font-size:22px;color:var(--ink);line-height:1.1;letter-spacing:-.01em">How has the relationship between games and society influenced our understanding of the mundane?</div>
       </div>
-    </section>
-
-    <!-- ISSUES -->
-    <section class="sigma-section">
-      <div class="container">
-        <h2 class="h2">Issues</h2>
-        <p class="muted maxw">Browse issue themes and entry points. Replace links once your issue pages are final.</p>
-
-        <div class="issues-grid">
-          <article class="card issue-card">
-            <div class="issue-top">
-              <span class="badge">Issue 1</span>
-              <span class="badge soft">Nov 2022</span>
-            </div>
-            <h3 class="h3">Learning and Citizenship</h3>
-            <p class="p-sm">The inaugural issue. Stories, imagination, games, and arts as tools for learning and civic life.</p>
-            <div class="issue-actions">
-              <a class="btn small" href="#" aria-label="Read SIGMA Issue 1">Read Issue 1</a>
-            </div>
-          </article>
-
-          <article class="card issue-card">
-            <div class="issue-top">
-              <span class="badge">Issue 2</span>
-              <span class="badge soft">Add date</span>
-            </div>
-            <h3 class="h3">Issue 2</h3>
-            <p class="p-sm">Add theme line from Issue 2 cover / contents page.</p>
-            <div class="issue-actions">
-              <a class="btn small ghost" href="#" aria-label="Read SIGMA Issue 2">Read Issue 2</a>
-            </div>
-          </article>
-
-          <article class="card issue-card">
-            <div class="issue-top">
-              <span class="badge">Issue 3</span>
-              <span class="badge soft">Add date</span>
-            </div>
-            <h3 class="h3">Issue 3</h3>
-            <p class="p-sm">Add theme line from Issue 3 cover / contents page.</p>
-            <div class="issue-actions">
-              <a class="btn small ghost" href="#" aria-label="Read SIGMA Issue 3">Read Issue 3</a>
-            </div>
-          </article>
-        </div>
+      <div style="background:var(--paper);padding:36px 32px">
+        <div style="font-family:var(--font-d);font-size:22px;color:var(--ink);line-height:1.1;letter-spacing:-.01em">What concepts and ideas can foster learning and citizenship in multimedia and arts?</div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- FEATURED PIECES (Carousel) -->
-    <section class="sigma-section">
-      <div class="container">
-        <div class="carousel-head">
-          <div>
-            <h2 class="h2">Start here</h2>
-            <p class="muted maxw">A few entry points across Storytelling, Imagination, Games, and Multimedia &amp; Arts.</p>
-          </div>
-
-          <div class="carousel-controls" aria-label="Featured pieces controls">
-            <button class="icon-btn" type="button" data-carousel="sigmaFeatured" data-action="prev" aria-label="Previous">
-              ‹
-            </button>
-            <button class="icon-btn" type="button" data-carousel="sigmaFeatured" data-action="next" aria-label="Next">
-              ›
-            </button>
-          </div>
-        </div>
-
-        <div class="carousel" data-carousel-id="sigmaFeatured">
-          <div class="carousel-track" role="list">
-            <!-- JS populates slides -->
-          </div>
-        </div>
+<!-- FOR PRACTITIONERS -->
+<section class="sec-d">
+  <div class="wrap-w" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start">
+    <div>
+      <p class="kicker">A journal for practitioners, thinkers, and makers</p>
+      <h2 class="sh2">What SIGMA<br>publishes.</h2>
+      <p class="body-p light">SIGMA is a space for speculative storytelling and thinking — and for the people, practices, and questions that refuse easy categorisation.</p>
+      <p class="body-p light">It sits at the intersection of civic imagination and cultural practice, publishing essays, interviews, creative work, and critical reflection from across South Asia and beyond.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr;gap:2px">
+      <div style="background:rgba(255,255,255,.03);border:.5px solid rgba(242,237,228,.08);padding:28px 24px">
+        <div style="font-size:10px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.14em;margin-bottom:10px">Storytelling</div>
+        <p style="font-size:13.5px;color:rgba(242,237,228,.46);line-height:1.65">Narratives as civic context, voice, empathy, and social action. Stories that situate communities inside the systems they live in.</p>
       </div>
-    </section>
-
-    <!-- EDITOR EXCERPT -->
-    <section class="sigma-section">
-      <div class="container">
-        <div class="card excerpt">
-          <h2 class="h2">From the Editor</h2>
-          <p class="p">
-            “Memories of growing up unfurl in the form of stories, imagined or recounted by our elders. Some of those stories are so vivid in our memories that one wonders why they mean so much to us.
-            Philosophers have tried to find an explanation as to why stories matter to human beings. Does it help in learning? Can we build meaningful social change through storytelling in all its forms?”
-          </p>
-          <p class="p muted">
-            Excerpt from the inaugural issue editor’s note. You can link the full note on the SIGMA site.
-          </p>
-          <div class="excerpt-actions">
-            <a class="btn small ghost" href="https://sigma.smartngo.org/" target="_blank" rel="noreferrer">Read more on SIGMA</a>
-          </div>
-        </div>
+      <div style="background:rgba(255,255,255,.03);border:.5px solid rgba(242,237,228,.08);padding:28px 24px">
+        <div style="font-size:10px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.14em;margin-bottom:10px">Imagination</div>
+        <p style="font-size:13.5px;color:rgba(242,237,228,.46);line-height:1.65">Essays that treat imagination as a public capability, not a private luxury. Speculation as civic method.</p>
       </div>
-    </section>
-
-    <!-- CREDITS + CONTRIBUTE -->
-    <section class="sigma-section">
-      <div class="container">
-        <div class="split">
-          <div class="card credits">
-            <h2 class="h2">Editorial and design</h2>
-            <p class="p-sm"><strong>Editor:</strong> Abeer Kapoor</p>
-            <p class="p-sm"><strong>Copy Editor:</strong> Yana Bey</p>
-            <p class="p-sm"><strong>Editorial Coordinator:</strong> Komal Sahi</p>
-            <p class="p-sm"><strong>Design:</strong> Ujan Dutta and Arpit Chugh</p>
-          </div>
-
-          <div class="card contribute">
-            <h2 class="h2">Write for SIGMA</h2>
-            <p class="p">
-              We publish work grounded in practice and argument, and we welcome forms beyond the conventional essay.
-            </p>
-            <div class="cta-row">
-              <a class="btn primary" href="#" aria-label="Pitch an essay">Pitch an idea</a>
-              <a class="btn ghost" href="#" aria-label="Partner with SIGMA">Partner with SIGMA</a>
-              <a class="btn ghost" href="#" aria-label="Subscribe to SIGMA updates">Subscribe</a>
-            </div>
-            <p class="muted p-sm" style="margin-top:10px;">
-              Replace these links with your email / form / subscription flow.
-            </p>
-          </div>
-        </div>
+      <div style="background:rgba(255,255,255,.03);border:.5px solid rgba(242,237,228,.08);padding:28px 24px">
+        <div style="font-size:10px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.14em;margin-bottom:10px">Games</div>
+        <p style="font-size:13.5px;color:rgba(242,237,228,.46);line-height:1.65">Analogue play, systems thinking, learning, and citizenship through interaction. Games as more than entertainment.</p>
       </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-row">
-          <span>© Civic Games Lab</span>
-          <span>SIGMA</span>
-        </div>
+      <div style="background:rgba(255,255,255,.03);border:.5px solid rgba(242,237,228,.08);padding:28px 24px">
+        <div style="font-size:10px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.14em;margin-bottom:10px">Multimedia &amp; Arts</div>
+        <p style="font-size:13.5px;color:rgba(242,237,228,.46);line-height:1.65">Comics, performance, installations, and hybrid forms as civic method. Practice that refuses to be disciplined.</p>
       </div>
-    </footer>
-  </main>
+    </div>
+  </div>
+</section>
 
-  <script src="js/sigma.js"></script>
+<!-- ISSUES -->
+<section class="sec-p2">
+  <div class="wrap">
+    <p class="kicker k-dark">Issues</p>
+    <h2 class="sh2 dark">Published<br>work.</h2>
+    <p class="body-p dark">Browse issue themes and entry points.</p>
+  </div>
+  <div class="wrap-w" style="margin-top:44px">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line-ink)">
+      <div style="background:var(--paper-2);padding:36px 28px 40px">
+        <div style="font-size:9px;font-weight:700;color:rgba(13,26,19,.35);text-transform:uppercase;letter-spacing:.16em;margin-bottom:20px">Issue 01</div>
+        <div style="font-family:var(--font-d);font-size:32px;color:var(--ink);text-transform:uppercase;letter-spacing:-.01em;line-height:.92;margin-bottom:16px">Foundations</div>
+        <p style="font-size:13px;color:rgba(13,26,19,.5);line-height:1.65">The inaugural issue. Stories, imagination, games, and arts as tools for learning and civic life.</p>
+      </div>
+      <div style="background:var(--paper-2);padding:36px 28px 40px;position:relative">
+        <div style="font-size:9px;font-weight:700;color:rgba(13,26,19,.35);text-transform:uppercase;letter-spacing:.16em;margin-bottom:20px">Issue 02</div>
+        <div style="font-family:var(--font-d);font-size:32px;color:var(--ink);text-transform:uppercase;letter-spacing:-.01em;line-height:.92;margin-bottom:16px">Coming</div>
+        <p style="font-size:13px;color:rgba(13,26,19,.4);line-height:1.65;font-style:italic">Theme forthcoming.</p>
+      </div>
+      <div style="background:var(--paper-2);padding:36px 28px 40px">
+        <div style="font-size:9px;font-weight:700;color:rgba(13,26,19,.35);text-transform:uppercase;letter-spacing:.16em;margin-bottom:20px">Issue 03</div>
+        <div style="font-family:var(--font-d);font-size:32px;color:var(--ink);text-transform:uppercase;letter-spacing:-.01em;line-height:.92;margin-bottom:16px">Coming</div>
+        <p style="font-size:13px;color:rgba(13,26,19,.4);line-height:1.65;font-style:italic">Theme forthcoming.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FROM THE EDITOR -->
+<section class="sec-d">
+  <div class="wrap">
+    <p class="kicker">From the editor</p>
+    <h2 class="sh2">Why this<br>journal.</h2>
+    <p class="body-p light">SIGMA exists because the questions it asks don't belong to any single discipline. They belong to practitioners — people who make things, who run programmes, who teach in classrooms, who design games and write stories and build civic spaces.</p>
+    <p class="body-p light">This is a journal for them. And for the thinkers who want to be in conversation with practice, not only with theory.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--paper);padding:96px 40px;text-align:center">
+  <h2 style="font-family:var(--font-d);font-size:64px;color:var(--ink);text-transform:uppercase;letter-spacing:-.025em;line-height:.9;margin-bottom:20px">Read SIGMA.</h2>
+  <p style="font-size:16px;color:rgba(13,26,19,.5);max-width:48ch;margin:0 auto 36px;line-height:1.7">Contribute writing, research, or creative work. Or subscribe to stay across new issues and conversations.</p>
+  <a class="btn-p" href="work-with-us.html">Get in touch →</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-brand">Civic Games Lab</div>
+  <nav class="footer-links">
+    <a href="governance.html">Governance</a>
+    <a href="climate.html">Climate</a>
+    <a href="digital.html">Digital</a>
+    <a href="health.html">Health</a>
+    <a href="games.html">All Games</a>
+    <a href="festival.html">Festival</a>
+    <a href="work-with-us.html">Work With Us</a>
+  </nav>
+</footer>
+
 </body>
 </html>

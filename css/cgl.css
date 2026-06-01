@@ -726,6 +726,15 @@ a { color: inherit; text-decoration: none; }
 .lede.light,
 .body-p.light,
 .sbody { color: rgba(242,237,228,0.58); }
+.page-note {
+  margin: 28px 0 0;
+  max-width: 72ch;
+  color: rgba(242,237,228,0.42);
+  font-size: 12px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
 .lede.dark,
 .body-p.dark,
 .sbody.dark { color: rgba(13,26,19,0.62); }

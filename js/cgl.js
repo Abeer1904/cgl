@@ -158,7 +158,7 @@
       <article class="game-card" data-domain="${game.domain}">
         <a href="games/${game.slug}.html" aria-label="Open ${game.title}">
           <div class="game-card-media">
-            <img src="${game.image}" alt="${game.title} cover" loading="lazy">
+            <img src="${game.image}" alt="${game.title} cover" loading="eager" decoding="async">
           </div>
           <div class="game-card-body">
             <div class="game-card-kicker">${game.domain} · ${game.year}</div>

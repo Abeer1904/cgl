@@ -25,7 +25,7 @@ a { color: inherit; text-decoration: none; }
 .nav {
   background: var(--ink);
   padding: 0 32px;
-  min-height: 72px;
+  min-height: 84px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,8 +41,8 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
 }
 .nav-logo {
-  height: 46px;
-  max-width: 260px;
+  height: 60px;
+  max-width: 320px;
   width: auto;
   display: block;
 }
@@ -642,7 +642,7 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
 }
 .footer-logo {
-  height: 52px;
+  height: 64px;
   width: auto;
   display: block;
   opacity: 0.85;
@@ -987,6 +987,8 @@ a { color: inherit; text-decoration: none; }
   background: var(--paper);
   color: var(--ink);
   min-height: 100%;
+  min-width: 0;
+  overflow: hidden;
 }
 .game-card a {
   display: grid;
@@ -994,7 +996,7 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
 }
 .game-card-media {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   background: rgba(13,26,19,0.08);
   overflow: hidden;
 }
@@ -1016,10 +1018,11 @@ a { color: inherit; text-decoration: none; }
 }
 .game-card-title {
   font-family: var(--font-d);
-  font-size: 28px;
+  font-size: clamp(22px, 2.2vw, 28px);
   line-height: 0.95;
   text-transform: uppercase;
   margin-bottom: 10px;
+  overflow-wrap: anywhere;
 }
 .game-card-desc {
   color: rgba(13,26,19,0.58);
@@ -1319,6 +1322,105 @@ a { color: inherit; text-decoration: none; }
   .dots-nav { display: none; }
 }
 @media (max-width: 560px) {
+  .nav {
+    min-height: 76px;
+    padding: 0 20px;
+  }
+  .nav-logo {
+    height: 52px;
+    max-width: 280px;
+  }
+  .page-hero {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .page-h1 {
+    font-size: clamp(40px, 13vw, 52px);
+    max-width: 100%;
+  }
+  .filter-bar {
+    gap: 12px;
+  }
+  .filter-chips {
+    width: 100%;
+  }
+  .chip {
+    padding: 8px 10px;
+  }
+  .game-card-media {
+    aspect-ratio: 16 / 9;
+  }
+  .game-card-body {
+    padding: 16px;
+  }
+  .game-card-title {
+    font-size: 24px;
+  }
+  .game-hero {
+    min-height: auto;
+  }
+  .hero-text {
+    padding: 44px 20px 30px;
+  }
+  .game-title {
+    font-size: clamp(48px, 18vw, 72px);
+  }
+  .game-sub {
+    font-size: 14px;
+  }
+  .hero-image {
+    min-height: 0;
+    height: min(92vw, 360px);
+  }
+  .gallery-hd {
+    display: block;
+    padding: 40px 20px 20px;
+  }
+  .entry-card,
+  .appr-cell,
+  .gap-card,
+  .en-cell,
+  .proof-card,
+  .platform-card,
+  .plat-game,
+  .flow-step,
+  .g-card,
+  .fact,
+  .dep,
+  .mech,
+  .out,
+  .rel-card {
+    padding: 20px;
+  }
+  .entry-game,
+  .appr-game,
+  .gap-title,
+  .en-title,
+  .proof-game-name,
+  .platform-name,
+  .plat-game-title,
+  .flow-pill,
+  .mech-title,
+  .out-title,
+  .rel-name {
+    font-size: 22px;
+    overflow-wrap: anywhere;
+  }
+  .research-layer {
+    grid-template-columns: 1fr !important;
+  }
+  .research-layer-label {
+    padding: 24px 20px !important;
+    border-right: 0 !important;
+    border-bottom: 0.5px solid rgba(242,237,228,0.08);
+  }
+  .research-layer-body {
+    min-width: 0;
+    padding: 24px 20px !important;
+  }
+  .research-layer .sbody {
+    overflow-wrap: anywhere;
+  }
   .games-grid,
   .facts,
   .out-grid,

@@ -24,11 +24,12 @@ a { color: inherit; text-decoration: none; }
 /* ── NAV ── */
 .nav {
   background: var(--ink);
-  padding: 0 40px;
+  padding: 0 32px;
   height: 58px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 28px;
   border-bottom: 0.5px solid var(--line);
   position: sticky;
   top: 0;
@@ -41,20 +42,24 @@ a { color: inherit; text-decoration: none; }
 }
 .nav-logo {
   height: 28px;
+  max-width: 190px;
   width: auto;
   display: block;
 }
 .nav-links {
   display: flex;
-  gap: 22px;
+  gap: clamp(10px, 1.25vw, 18px);
   align-items: center;
+  justify-content: flex-end;
+  flex: 1;
 }
 .nav-links a {
-  font-size: 10px;
+  font-size: 9.5px;
   color: rgba(242,237,228,0.42);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   transition: color 0.15s;
+  white-space: nowrap;
 }
 .nav-links a:hover { color: rgba(242,237,228,0.78); }
 .nav-links a.active { color: var(--cream); }
